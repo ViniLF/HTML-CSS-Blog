@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>HTML & CSS Blog - Unifatecie</title>
+</head>
+<body>
+    <header>
+        <h1>Blog HTML & CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blog-container">
+        <h1>Bem-vindo(a) ao Blog de HTML & CSS</h1>
+        <p>Este blog é dedicado a compartilhar conhecimentos sobre HTML e CSS, duas linguagens essenciais para a criação de sites modernos e interativos.</p>
+        <p>Aqui você encontrará tutoriais, dicas e exemplos práticos para aprimorar suas habilidades e entender melhor como estruturar e estilizar páginas web.</p>
+        <p>Esperamos que aproveite o conteúdo e aprenda bastante!</p>
+
+        <h2>A História do HTML</h2>
+        <p>O HTML (HyperText Markup Language) foi criado em 1991 por Tim Berners-Lee, com o objetivo de permitir a formatação e o link entre páginas na recém-criada World Wide Web (WWW). A primeira versão do HTML era simples, permitindo apenas a criação de links e formatação básica de texto.</p>
+        <p>Com o tempo, o HTML evoluiu para suportar novas funcionalidades e elementos, como imagens, tabelas e formulários. Em 1995, o HTML 2.0 foi lançado como o primeiro padrão oficial, seguido de várias atualizações, com o HTML 4.01 em 1999, marcando uma grande evolução na estruturação de documentos.</p>
+
+        <h2>HTML na Atualidade</h2>
+        <p>Atualmente, o HTML 5 é a versão mais moderna e amplamente utilizada. Introduzido oficialmente em 2014, o HTML5 trouxe importantes inovações, como a integração de áudio e vídeo diretamente nas páginas, suporte a gráficos 2D e 3D, além de melhorias na semântica e acessibilidade.</p>
+        <p>Hoje, o HTML é uma das tecnologias fundamentais da web, usado em praticamente todos os sites, junto com CSS e JavaScript. Através do HTML5, o desenvolvimento web tornou-se mais interativo e acessível, permitindo a criação de sites e aplicações responsivas e dinâmicas.</p>
+
+        <!-- Botão para expandir e recolher conteúdo -->
+        <button class="toggle-btn" onclick="toggleVisibility('html-examples')">Ver exemplos de HTML</button>
+        <div id="html-examples" class="toggle-content">
+            <h3>1. Título e Subtítulo</h3>
+            <p>Em HTML, você pode usar as tags <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para criar títulos e subtítulos. O <code>&lt;h1&gt;</code> é o título principal e <code>&lt;h2&gt;</code> a <code>&lt;h6&gt;</code> são subtítulos com diferentes níveis de importância.</p>
+            <pre><code>&lt;h1&gt;Este é um título principal&lt;/h1&gt;
+&lt;h2&gt;Este é um subtítulo de nível 2&lt;/h2&gt;
+&lt;h3&gt;Este é um subtítulo de nível 3&lt;/h3&gt;</code></pre>
+
+            <h3>1. Parágrafo Simples</h3>
+            <p>Um parágrafo em HTML é definido usando a tag <code>&lt;p&gt;</code>.</p>
+            <pre><code>&lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;</code></pre>
+
+            <h3>2. Link (Âncora)</h3>
+            <p>Para criar um link, usamos a tag <code>&lt;a&gt;</code> com o atributo <code>href</code>:</p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Clique aqui para acessar o site&lt;/a&gt;</code></pre>
+
+            <h3>3. Imagem</h3>
+            <p>Imagens são adicionadas com a tag <code>&lt;img&gt;</code> e o atributo <code>src</code>:</p>
+            <pre><code>&lt;img src="imagem-exemplo.jpg" alt="Descrição da imagem"&gt;</code></pre>
+
+            <h3>4. Lista Ordenada</h3>
+            <p>Um exemplo de lista ordenada (numerada) em HTML:</p>
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <h3>5. Lista Não Ordenada</h3>
+            <p>Uma lista não ordenada (com marcadores) em HTML:</p>
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item A&lt;/li&gt;
+  &lt;li&gt;Item B&lt;/li&gt;
+  &lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <h3>6. Tabela</h3>
+            <p>Você pode criar uma tabela com a tag <code>&lt;table&gt;</code>:</p>
+            <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;João&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Maria&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>7. Formulário</h3>
+            <p>Um exemplo simples de formulário HTML:</p>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Nome:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name" required&gt;
+
+  &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;
+
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+
+        <h2 id="css-history">A História do CSS</h2>
+        <p>O CSS (Cascading Style Sheets) foi desenvolvido por Håkon Wium Lie e lançado pela primeira vez em 1996. O CSS surgiu para resolver a necessidade de separar a apresentação visual do conteúdo HTML, permitindo que a estilização das páginas web fosse feita de forma mais flexível e organizada.</p>
+        <p>As primeiras versões do CSS permitiram apenas o controle básico de estilos, como fontes e cores. Desde então, o CSS evoluiu significativamente, com o CSS2 trazendo a capacidade de criar layouts complexos e o CSS3 introduzindo novas funcionalidades, como gradientes, animações e transformações.</p>
+
+        <h2>CSS na Atualidade</h2>
+        <p>Hoje, o CSS é uma linguagem poderosa para o design web. O CSS3 é amplamente utilizado e continua a ser aprimorado com novas especificações, como o Flexbox e o Grid Layout, que facilitam a criação de layouts responsivos e complexos. O CSS também suporta variáveis, custom properties e pré-processadores, que tornam a estilização mais eficiente e dinâmica.</p><br>
+
+        <button class="toggle-btn" onclick="toggleVisibility('css-examples')">Ver exemplos de CSS</button>
+        <div id="css-examples" class="toggle-content">
+          <h3>1. Fontes e Estilos de Texto</h3>
+          <p>Definindo a fonte, tamanho e estilo de texto:</p>
+          <pre><code>/* Definindo a fonte, tamanho e estilo de texto */
+      body {
+          font-family: 'Arial', sans-serif; /* Define a família de fontes como Arial ou sans-serif como fallback */
+          font-size: 16px; /* Define o tamanho da fonte padrão para 16 pixels */
+          color: #333; /* Define a cor do texto como cinza escuro */
+          line-height: 1.5; /* Define o espaçamento entre as linhas de texto */
+      }
+      
+      /* Estilizando títulos */
+      h1, h2, h3 {
+          font-weight: bold; /* Define que os títulos devem ser em negrito */
+          margin-bottom: 20px; /* Adiciona um espaçamento abaixo de cada título */
+      }
+      
+      h1 {
+          font-size: 2.5rem; /* Define o tamanho da fonte do título h1 para 2.5 rem */
+      }
+      
+      h2 {
+          font-size: 2rem; /* Define o tamanho da fonte do título h2 para 2 rem */
+      }
+      
+      p {
+          font-size: 1rem; /* Define o tamanho da fonte dos parágrafos para 1 rem */
+          margin-bottom: 15px; /* Adiciona um espaçamento abaixo de cada parágrafo */
+      }
+      </code></pre>
+      
+          <h3>2. Cores e Fundos</h3>
+          <p>Definindo cores de fundo e texto, e alterando cores ao passar o mouse:</p>
+          <pre><code>/* Definindo cores de fundo e texto */
+      body {
+          background-color: #f4f4f4; /* Define a cor de fundo da página como cinza claro */
+          color: #333; /* Define a cor do texto como cinza escuro */
+      }
+      
+      /* Alterando cor de fundo e texto ao passar o mouse */
+      button {
+          background-color: #007bff; /* Define a cor de fundo do botão como azul */
+          color: white; /* Define a cor do texto do botão como branco */
+          border: none; /* Remove qualquer borda do botão */
+          padding: 10px 20px; /* Adiciona espaçamento interno de 10px em cima e embaixo e 20px<br>nas laterais */
+          border-radius: 5px; /* Arredonda os cantos do botão */
+          cursor: pointer; /* Mostra o ponteiro de "mão" ao passar o mouse */
+      }
+      
+      button:hover {
+          background-color: #0056b3; /* Altera a cor de fundo do botão para um azul mais escuro ao<br>passar o mouse */
+      }
+      </code></pre>
+      
+          <h3>3. Espaçamento (Margin e Padding)</h3>
+          <p>Espaçamento entre elementos usando margin e padding:</p>
+          <pre><code>/* Espaçamento entre elementos */
+      .container {
+          padding: 20px; /* Adiciona 20px de espaçamento interno (padding) em todos os<br>lados do container */
+          margin: 0 auto; /* Centraliza o container horizontalmente */
+      }
+      
+      p {
+          margin-bottom: 1.5rem; /* Adiciona um espaçamento inferior de 1.5 rem em cada parágrafo */
+      }
+      
+      h1 {
+          margin-top: 0; /* Remove o espaçamento superior do título h1 */
+          margin-bottom: 1rem; /* Adiciona 1 rem de espaçamento inferior no título h1 */
+      }
+      </code></pre>
+      
+          <h3>4. Bordas e Sombras</h3>
+          <p>Bordas e sombras em caixas para melhorar a aparência:</p>
+          <pre><code>/* Bordas e sombras em caixas */
+      .box {
+          border: 1px solid #ccc; /* Adiciona uma borda de 1px com cor cinza clara */
+          padding: 20px; /* Adiciona 20px de espaçamento interno (padding) dentro da caixa */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à caixa */
+          border-radius: 8px; /* Arredonda os cantos da caixa */
+      }
+      </code></pre>
+      
+          <h3>5. Layout Responsivo com Flexbox</h3>
+          <p>Usando Flexbox para criar layouts flexíveis e responsivos:</p>
+          <pre><code>/* Usando Flexbox para criar layout flexível */
+      .container {
+          display: flex; /* Ativa o layout flexível (flexbox) */
+          flex-direction: row; /* Organiza os itens em linha (horizontalmente) */
+          justify-content: space-between; /* Distribui os itens com espaçamento igual entre eles */
+      }
+      
+      .container .item {
+          flex: 1; /* Define que cada item flexível ocupa uma fração igual do espaço */
+          padding: 10px; /* Adiciona 10px de espaçamento interno (padding) em cada item */
+          margin: 5px; /* Adiciona 5px de margem ao redor de cada item */
+          background-color: #e9ecef; /* Define a cor de fundo dos itens como cinza claro */
+      }
+      </code></pre>
+      
+          <h3>6. Grid Layout</h3>
+          <p>Usando Grid Layout para organizar elementos em uma grade:</p>
+          <pre><code>/* Layout de Grid para organizar elementos */
+      .grid-container {
+          display: grid; /* Ativa o layout de grade (grid) */
+          grid-template-columns: repeat(3, 1fr); /* Define três colunas de largura igual */
+          gap: 10px; /* Adiciona 10px de espaçamento entre os itens da grade */
+      }
+      
+      .grid-item {
+          background-color: #ddd; /* Define a cor de fundo dos itens da grade como cinza */
+          padding: 20px; /* Adiciona 20px de espaçamento interno (padding) nos itens */
+          text-align: center; /* Centraliza o texto dentro dos itens da grade */
+      }
+      </code></pre>
+      
+          <h3>7. Media Queries (Responsividade)</h3>
+          <p>Adaptação de layout para diferentes tamanhos de tela usando Media Queries:</p>
+          <pre><code>/* Adaptação de layout para telas menores */
+      @media (max-width: 768px) {
+          .container {
+              flex-direction: column; /* Organiza os itens em coluna (verticalmente) em telas menores */
+          }
+      
+          .grid-container {
+              grid-template-columns: 1fr; /* Define uma única coluna em vez de três em telas menores */
+          }
+      }
+      </code></pre>      
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Blog HTML & CSS - Unifatecie. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

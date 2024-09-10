@@ -1,0 +1,178 @@
+/* Definições básicas de estilo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #003366, #004080); /* Gradiente de fundo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para o header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Cor de fundo para o header */
+    color: #333; /* Cor do texto no header */
+    padding: 15px 20px; /* Ajuste o padding para mais espaço */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Garante que o header fique acima de outros conteúdos */
+}
+
+/* Estilo do título do header */
+header h1 {
+    color: black;
+    margin: 0;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    margin-right: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado do link */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    position: relative; /* Necessário para a linha aparecer corretamente */
+    display: inline-block; /* Garante que o link se comporte como um bloco para efeitos de linha */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Suaviza transições */
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0; /* Inicialmente a linha está escondida */
+    height: 2px; /* Altura da linha */
+    background: black; /* Cor da linha */
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Alinha a linha na parte inferior do botão */
+    transition: width 0.3s; /* Suaviza a expansão da linha */
+}
+
+nav ul li a:hover {
+    color: white; /* Cor do texto ao passar o mouse */
+    background-color: #2184e7; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de escala para efeito de destaque */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Linha se estende completamente no hover */
+}
+
+/* Container do blog */
+.blog-container {
+    background: #fff;
+    margin: 100px auto 20px; /* Aumenta o espaço superior para garantir que não fique escondido atrás do header */
+    padding: 20px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Adiciona uma borda visível */
+    position: relative;
+}
+
+/* Botão */
+.toggle-btn {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px; /* Ajuste o padding para um botão mais confortável */
+    font-size: 16px;
+    border: none;
+    background-color: #004080;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Leve aumento de escala para efeito de destaque */
+}
+
+/* Conteúdo alternável */
+.toggle-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.toggle-content.show {
+    display: block;
+}
+
+/* Estilo para exemplos de código */
+pre, code {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    overflow-x: auto; /* Permite rolar horizontalmente se o conteúdo for muito largo */
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px; /* Ajusta o tamanho da fonte para melhor leitura */
+    color: #333; /* Cor do texto do parágrafo */
+}
+
+/* Estilo para elementos de código */
+code {
+    background-color: #f4f4f4; /* Fundo leve para destacar o código */
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 90%; /* Tamanho da fonte menor para o código */
+    color: #d6336c; /* Cor do texto do código */
+    border: 1px solid #ddd; /* Borda sutil ao redor do código */
+    display: inline; /* Garante que o código fique no mesmo nível que o texto */
+}
+
+pre code {
+    background-color: #f4f4f4;
+    display: block;
+    padding: 10px;
+}
+
+#css-history {
+    padding-top: 70px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: auto;
+}
