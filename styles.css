@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Definições básicas de estilo */
 body {
     margin: 0;
@@ -94,6 +98,7 @@ nav ul li a:hover::after {
 
 /* Botão */
 .toggle-btn {
+    margin-bottom: 20px; 
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     margin-top: 20px;
@@ -116,10 +121,16 @@ nav ul li a:hover::after {
 .toggle-content {
     display: none;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 
 .toggle-content.show {
     display: block;
+    max-width: 100%; /* Garantia para não exceder a tela */
+    width: auto;
+    overflow-wrap: break-word; /* Quebra palavras longas */
+    word-wrap: break-word; /* Compatibilidade com navegadores mais antigos */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
 }
 
 /* Estilo para exemplos de código */
@@ -153,7 +164,7 @@ code {
     border-radius: 3px;
     padding: 2px 4px;
     font-size: 90%; /* Tamanho da fonte menor para o código */
-    color: #d6336c; /* Cor do texto do código */
+    color: #0361b9; /* Cor do texto do código */
     border: 1px solid #ddd; /* Borda sutil ao redor do código */
     display: inline; /* Garante que o código fique no mesmo nível que o texto */
 }
@@ -168,6 +179,51 @@ pre code {
     padding-top: 70px;
 }
 
+/* Estilo ajustado para garantir que a imagem fique abaixo do botão */
+.image-container {
+    display: block;
+    width: 50%; /* Define a largura do container em 60% da largura do seu elemento pai */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+}
+
+.styled-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.styled-image:hover {
+    transform: scale(1.05);
+}
+
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ececec;
+    border-radius: 8px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+}
+.about h1 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+.about p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.title-team {
+    padding-top: 40px;
+}
+
+
 /* Footer */
 footer {
     background-color: #fff;
@@ -175,4 +231,47 @@ footer {
     text-align: center;
     border-top: 1px solid #ddd;
     margin-top: auto;
+}
+
+.unifatecie-logo {
+    padding: 50px 0 0 0;
+    display: block;         /* Faz com que a imagem seja tratada como um bloco */
+    margin: 0 auto;         /* Define a margem automática nas laterais, centralizando o elemento */
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 10px;
+        width: 90%; /* Largura menor em telas médias */
+    }
+
+    h1 {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    #title-main {
+        font-size: 18px;
+    }
+
+    nav {
+        margin-left: 22px;
+        padding: 1px; /* Reduz o padding */
+        font-size: 14px; /* Diminui o tamanho da fonte */
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .toggle-content.show {
+        padding: 8px; /* Reduz o padding em telas menores */
+    }
+
 }

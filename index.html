@@ -12,15 +12,15 @@
         <h1>Blog HTML & CSS</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#team">Equipe</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="blog-container">
-        <h1>Bem-vindo(a) ao Blog de HTML & CSS</h1>
+        <h1 id="title-main">Bem-vindo(a) ao Blog de HTML & CSS</h1>
         <p>Este blog é dedicado a compartilhar conhecimentos sobre HTML e CSS, duas linguagens essenciais para a criação de sites modernos e interativos.</p>
         <p>Aqui você encontrará tutoriais, dicas e exemplos práticos para aprimorar suas habilidades e entender melhor como estruturar e estilizar páginas web.</p>
         <p>Esperamos que aproveite o conteúdo e aprenda bastante!</p>
@@ -37,67 +37,83 @@
         <button class="toggle-btn" onclick="toggleVisibility('html-examples')">Ver exemplos de HTML</button>
         <div id="html-examples" class="toggle-content">
             <h3>1. Título e Subtítulo</h3>
-            <p>Em HTML, você pode usar as tags <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para criar títulos e subtítulos. O <code>&lt;h1&gt;</code> é o título principal e <code>&lt;h2&gt;</code> a <code>&lt;h6&gt;</code> são subtítulos com diferentes níveis de importância.</p>
-            <pre><code>&lt;h1&gt;Este é um título principal&lt;/h1&gt;
-&lt;h2&gt;Este é um subtítulo de nível 2&lt;/h2&gt;
-&lt;h3&gt;Este é um subtítulo de nível 3&lt;/h3&gt;</code></pre>
+<p>Em HTML, você pode usar as tags <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para criar títulos e subtítulos. O <code>&lt;h1&gt;</code> é o título principal e <code>&lt;h2&gt;</code> a <code>&lt;h6&gt;</code> são subtítulos com diferentes níveis de importância.</p>
+<pre><code>
+<b>&lt;h1&gt;Este é um título principal&lt;/h1&gt;</b> /* Define um título principal de nível 1 */
+<b>&lt;h2&gt;Este é um subtítulo de nível 2&lt;/h2&gt;</b> /* Define um subtítulo de nível 2 */
+<b>&lt;h3&gt;Este é um subtítulo de nível 3&lt;/h3&gt;</b> /* Define um subtítulo de nível 3 */
+</code></pre>
 
-            <h3>1. Parágrafo Simples</h3>
-            <p>Um parágrafo em HTML é definido usando a tag <code>&lt;p&gt;</code>.</p>
-            <pre><code>&lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;</code></pre>
+<h3>2. Parágrafo Simples</h3>
+<p>Um parágrafo em HTML é definido usando a tag <code>&lt;p&gt;</code>.</p>
+<pre><code>
+<b>&lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;</b> /* Cria um parágrafo com texto */
+</code></pre>
 
-            <h3>2. Link (Âncora)</h3>
-            <p>Para criar um link, usamos a tag <code>&lt;a&gt;</code> com o atributo <code>href</code>:</p>
-            <pre><code>&lt;a href="https://www.example.com"&gt;Clique aqui para acessar o site&lt;/a&gt;</code></pre>
+<h3>3. Link (Âncora)</h3>
+<p>Para criar um link, usamos a tag <code>&lt;a&gt;</code> com o atributo <code>href</code>:</p>
+<pre><code>
+<b>&lt;a href="https://www.example.com"&gt;Clique aqui para acessar o site&lt;/a&gt;</b> /* Cria um link que<br>direciona para o URL especificado */
+</code></pre>
 
-            <h3>3. Imagem</h3>
-            <p>Imagens são adicionadas com a tag <code>&lt;img&gt;</code> e o atributo <code>src</code>:</p>
-            <pre><code>&lt;img src="imagem-exemplo.jpg" alt="Descrição da imagem"&gt;</code></pre>
+<h3>4. Imagem</h3>
+<p>Imagens são adicionadas com a tag <code>&lt;img&gt;</code> e o atributo <code>src</code>:</p>
+<pre><code>
+<b>&lt;img src="imagem-exemplo.jpg" alt="Descrição da imagem"&gt;</b> /* Adiciona uma imagem com<br>fonte e descrição alternativa */
+</code></pre>
 
-            <h3>4. Lista Ordenada</h3>
-            <p>Um exemplo de lista ordenada (numerada) em HTML:</p>
-            <pre><code>&lt;ol&gt;
-  &lt;li&gt;Item 1&lt;/li&gt;
-  &lt;li&gt;Item 2&lt;/li&gt;
-  &lt;li&gt;Item 3&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
+<h3>5. Lista Ordenada</h3>
+<p>Um exemplo de lista ordenada (numerada) em HTML:</p>
+<pre><code>
+<b>&lt;ol&gt;</b> /* Início de uma lista ordenada */
+  <b>&lt;li&gt;Item 1&lt;/li&gt;</b> /* Item 1 da lista */
+  <b>&lt;li&gt;Item 2&lt;/li&gt;</b> /* Item 2 da lista */
+  <b>&lt;li&gt;Item 3&lt;/li&gt;</b> /* Item 3 da lista */
+<b>&lt;/ol&gt;</b> /* Fim da lista ordenada */
+</code></pre>
 
-            <h3>5. Lista Não Ordenada</h3>
-            <p>Uma lista não ordenada (com marcadores) em HTML:</p>
-            <pre><code>&lt;ul&gt;
-  &lt;li&gt;Item A&lt;/li&gt;
-  &lt;li&gt;Item B&lt;/li&gt;
-  &lt;li&gt;Item C&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+<h3>6. Lista Não Ordenada</h3>
+<p>Uma lista não ordenada (com marcadores) em HTML:</p>
+<pre><code>
+<b>&lt;ul&gt;</b> /* Início de uma lista não ordenada */
+  <b>&lt;li&gt;Item A&lt;/li&gt;</b> /* Item A da lista */
+  <b>&lt;li&gt;Item B&lt;/li&gt;</b> /* Item B da lista */
+  <b>&lt;li&gt;Item C&lt;/li&gt;</b> /* Item C da lista */
+<b>&lt;/ul&gt;</b> /* Fim da lista não ordenada */
+</code></pre>
 
-            <h3>6. Tabela</h3>
-            <p>Você pode criar uma tabela com a tag <code>&lt;table&gt;</code>:</p>
-            <pre><code>&lt;table&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Nome&lt;/th&gt;
-    &lt;th&gt;Idade&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;João&lt;/td&gt;
-    &lt;td&gt;30&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Maria&lt;/td&gt;
-    &lt;td&gt;25&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
+<h3>7. Tabela</h3>
+<p>Você pode criar uma tabela com a tag <code>&lt;table&gt;</code>:</p>
+<pre><code>
+<b>&lt;table&gt;</b> /* Início de uma tabela */
+  <b>&lt;tr&gt;</b> /* Linha da tabela */
+    <b>&lt;th&gt;Nome&lt;/th&gt;</b> /* Cabeçalho da coluna Nome */
+    <b>&lt;th&gt;Idade&lt;/th&gt;</b> /* Cabeçalho da coluna Idade */
+  <b>&lt;/tr&gt;</b> /* Fim da linha da tabela */
+  <b>&lt;tr&gt;</b> /* Linha da tabela */
+    <b>&lt;td&gt;João&lt;/td&gt;</b> /* Dados da coluna Nome */
+    <b>&lt;td&gt;30&lt;/td&gt;</b> /* Dados da coluna Idade */
+  <b>&lt;/tr&gt;</b> /* Fim da linha da tabela */
+  <b>&lt;tr&gt;</b> /* Linha da tabela */
+    <b>&lt;td&gt;Maria&lt;/td&gt;</b> /* Dados da coluna Nome */
+    <b>&lt;td&gt;25&lt;/td&gt;</b> /* Dados da coluna Idade */
+  <b>&lt;/tr&gt;</b> /* Fim da linha da tabela */
+<b>&lt;/table&gt;</b> /* Fim da tabela */
+</code></pre>
 
-            <h3>7. Formulário</h3>
-            <p>Um exemplo simples de formulário HTML:</p>
-            <pre><code>&lt;form action="/submit" method="post"&gt;
-  &lt;label for="name"&gt;Nome:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name" required&gt;
-
-  &lt;label for="email"&gt;E-mail:&lt;/label&gt;
-  &lt;input type="email" id="email" name="email" required&gt;
-
-  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
-&lt;/form&gt;</code></pre>
+<h3>8. Formulário</h3>
+<p>Um exemplo simples de formulário HTML:</p>
+<pre><code>
+<b>&lt;form action="/submit" method="post"&gt;</b> /* Início do formulário com método de envio POST */
+  <b>&lt;label for="name"&gt;Nome:&lt;/label&gt;</b> /* Rótulo para o campo de nome */
+  <b>&lt;input type="text" id="name" name="name" required&gt;</b> /* Campo de entrada para nome */
+  
+  <b>&lt;label for="email"&gt;E-mail:&lt;/label&gt;</b> /* Rótulo para o campo de e-mail */
+  <b>&lt;input type="email" id="email" name="email" required&gt;</b> /* Campo de entrada para e-mail */
+  
+  <b>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</b> /* Botão de envio do formulário */
+<b>&lt;/form&gt;</b> /* Fim do formulário */
+</code></pre>
         </div>
 
         <h2 id="css-history">A História do CSS</h2>
@@ -112,138 +128,210 @@
           <h3>1. Fontes e Estilos de Texto</h3>
           <p>Definindo a fonte, tamanho e estilo de texto:</p>
           <pre><code>/* Definindo a fonte, tamanho e estilo de texto */
-      body {
-          font-family: 'Arial', sans-serif; /* Define a família de fontes como Arial ou sans-serif como fallback */
-          font-size: 16px; /* Define o tamanho da fonte padrão para 16 pixels */
-          color: #333; /* Define a cor do texto como cinza escuro */
-          line-height: 1.5; /* Define o espaçamento entre as linhas de texto */
-      }
+    <b>body {</b>
+        <b>font-family: 'Arial', sans-serif;</b> /* Define a família de fontes como Arial ou sans-serif como fallback */
+        <b>font-size: 16px;</b> /* Define o tamanho da fonte padrão para 16 pixels */
+        <b>color: #333;</b> /* Define a cor do texto como cinza escuro */
+        <b>line-height: 1.5;</b> /* Define o espaçamento entre as linhas de texto */
+    <b>}</b>
       
       /* Estilizando títulos */
-      h1, h2, h3 {
-          font-weight: bold; /* Define que os títulos devem ser em negrito */
-          margin-bottom: 20px; /* Adiciona um espaçamento abaixo de cada título */
-      }
+    <b>h1, h2, h3 {</b>
+        <b>font-weight: bold;</b> /* Define que os títulos devem ser em negrito */
+        <b>margin-bottom: 20px;</b> /* Adiciona um espaçamento abaixo de cada título */
+    <b>}</b>
       
-      h1 {
-          font-size: 2.5rem; /* Define o tamanho da fonte do título h1 para 2.5 rem */
-      }
+    <b>h1 {</b>
+        <b>font-size: 2.5rem;</b> /* Define o tamanho da fonte do título h1 para 2.5 rem */
+    <b>}</b>
       
-      h2 {
-          font-size: 2rem; /* Define o tamanho da fonte do título h2 para 2 rem */
-      }
+    <b>h2 {</b>
+        <b>font-size: 2rem;</b> /* Define o tamanho da fonte do título h2 para 2 rem */
+    <b>}</b>
       
-      p {
-          font-size: 1rem; /* Define o tamanho da fonte dos parágrafos para 1 rem */
-          margin-bottom: 15px; /* Adiciona um espaçamento abaixo de cada parágrafo */
-      }
+    <b>p {</b>
+        <b>font-size: 1rem;</b> /* Define o tamanho da fonte dos parágrafos para 1 rem */
+        <b>margin-bottom: 15px;</b> /* Adiciona um espaçamento abaixo de cada parágrafo */
+    <b>}</b>
       </code></pre>
       
           <h3>2. Cores e Fundos</h3>
           <p>Definindo cores de fundo e texto, e alterando cores ao passar o mouse:</p>
           <pre><code>/* Definindo cores de fundo e texto */
-      body {
-          background-color: #f4f4f4; /* Define a cor de fundo da página como cinza claro */
-          color: #333; /* Define a cor do texto como cinza escuro */
-      }
+    <b>body {</b>
+        <b>background-color: #f4f4f4;</b> /* Define a cor de fundo da página como cinza claro */
+        <b>color: #333;</b> /* Define a cor do texto como cinza escuro */
+    <b>}</b>
       
       /* Alterando cor de fundo e texto ao passar o mouse */
-      button {
-          background-color: #007bff; /* Define a cor de fundo do botão como azul */
-          color: white; /* Define a cor do texto do botão como branco */
-          border: none; /* Remove qualquer borda do botão */
-          padding: 10px 20px; /* Adiciona espaçamento interno de 10px em cima e embaixo e 20px<br>nas laterais */
-          border-radius: 5px; /* Arredonda os cantos do botão */
-          cursor: pointer; /* Mostra o ponteiro de "mão" ao passar o mouse */
-      }
+    <b>button {</b>
+        <b>background-color: #007bff;</b> /* Define a cor de fundo do botão como azul */
+          <b>color: white;</b> /* Define a cor do texto do botão como branco */
+          <b>border: none;</b> /* Remove qualquer borda do botão */
+          <b>padding: 10px 20px;</b> /* Adiciona espaçamento interno de 10px em cima e embaixo e 20px<br>          nas laterais */
+          <b>border-radius: 5px;</b> /* Arredonda os cantos do botão */
+          <b>cursor: pointer;</b> /* Mostra o ponteiro de "mão" ao passar o mouse */
+    <b>}</b>
       
-      button:hover {
-          background-color: #0056b3; /* Altera a cor de fundo do botão para um azul mais escuro ao<br>passar o mouse */
-      }
+    <b>button:hover</b> {
+        <b>background-color: #0056b3;</b> /* Altera a cor de fundo do botão para um azul mais escuro ao<br>        passar o mouse */
+    <b>}</b>
       </code></pre>
       
           <h3>3. Espaçamento (Margin e Padding)</h3>
           <p>Espaçamento entre elementos usando margin e padding:</p>
           <pre><code>/* Espaçamento entre elementos */
-      .container {
-          padding: 20px; /* Adiciona 20px de espaçamento interno (padding) em todos os<br>lados do container */
-          margin: 0 auto; /* Centraliza o container horizontalmente */
-      }
+    <b>.container {</b>
+        <b>padding: 20px;</b> /* Adiciona 20px de espaçamento interno (padding) em todos os<br>        lados do container */
+        <b>margin: 0 auto;</b> /* Centraliza o container horizontalmente */
+    <b>}</b>
       
-      p {
-          margin-bottom: 1.5rem; /* Adiciona um espaçamento inferior de 1.5 rem em cada parágrafo */
-      }
+    <b>p {</b>
+        <b>margin-bottom: 1.5rem;</b> /* Adiciona um espaçamento inferior de 1.5 rem em cada parágrafo */
+    <b>}</b>
       
-      h1 {
-          margin-top: 0; /* Remove o espaçamento superior do título h1 */
-          margin-bottom: 1rem; /* Adiciona 1 rem de espaçamento inferior no título h1 */
-      }
+    <b>h1 {</b>
+        <b>margin-top: 0;</b> /* Remove o espaçamento superior do título h1 */
+        <b>margin-bottom: 1rem;</b> /* Adiciona 1 rem de espaçamento inferior no título h1 */
+    <b>}</b>
       </code></pre>
       
           <h3>4. Bordas e Sombras</h3>
           <p>Bordas e sombras em caixas para melhorar a aparência:</p>
           <pre><code>/* Bordas e sombras em caixas */
-      .box {
-          border: 1px solid #ccc; /* Adiciona uma borda de 1px com cor cinza clara */
-          padding: 20px; /* Adiciona 20px de espaçamento interno (padding) dentro da caixa */
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à caixa */
-          border-radius: 8px; /* Arredonda os cantos da caixa */
-      }
+    <b>.box {</b>
+        <b>border: 1px solid #ccc;</b> /* Adiciona uma borda de 1px com cor cinza clara */
+        <b>padding: 20px;</b> /* Adiciona 20px de espaçamento interno (padding) dentro da caixa */
+        <b>box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);</b> /* Adiciona uma sombra suave à caixa */
+        <b>border-radius: 8px;</b> /* Arredonda os cantos da caixa */
+    <b>}</b>
       </code></pre>
       
           <h3>5. Layout Responsivo com Flexbox</h3>
           <p>Usando Flexbox para criar layouts flexíveis e responsivos:</p>
           <pre><code>/* Usando Flexbox para criar layout flexível */
-      .container {
-          display: flex; /* Ativa o layout flexível (flexbox) */
-          flex-direction: row; /* Organiza os itens em linha (horizontalmente) */
-          justify-content: space-between; /* Distribui os itens com espaçamento igual entre eles */
-      }
+    <b>.container {</b>
+        <b>display: flex;</b> /* Ativa o layout flexível (flexbox) */
+        <b>flex-direction: row;</b> /* Organiza os itens em linha (horizontalmente) */
+        <b>justify-content: space-between;</b> /* Distribui os itens com espaçamento igual entre eles */
+    <b>}</b>
       
-      .container .item {
-          flex: 1; /* Define que cada item flexível ocupa uma fração igual do espaço */
-          padding: 10px; /* Adiciona 10px de espaçamento interno (padding) em cada item */
-          margin: 5px; /* Adiciona 5px de margem ao redor de cada item */
-          background-color: #e9ecef; /* Define a cor de fundo dos itens como cinza claro */
-      }
+    <b>.container .item {</b>
+        <b>flex: 1;</b> /* Define que cada item flexível ocupa uma fração igual do espaço */
+        <b>padding: 10px;</b> /* Adiciona 10px de espaçamento interno (padding) em cada item */
+        <b>margin: 5px;</b> /* Adiciona 5px de margem ao redor de cada item */
+        <b>background-color: #e9ecef;</b> /* Define a cor de fundo dos itens como cinza claro */
+    <b>}</b>
       </code></pre>
       
           <h3>6. Grid Layout</h3>
           <p>Usando Grid Layout para organizar elementos em uma grade:</p>
           <pre><code>/* Layout de Grid para organizar elementos */
-      .grid-container {
-          display: grid; /* Ativa o layout de grade (grid) */
-          grid-template-columns: repeat(3, 1fr); /* Define três colunas de largura igual */
-          gap: 10px; /* Adiciona 10px de espaçamento entre os itens da grade */
-      }
+    <b>.grid-container {</b>
+        <b>display: grid;</b> /* Ativa o layout de grade (grid) */
+        <b>grid-template-columns: repeat(3, 1fr);</b> /* Define três colunas de largura igual */
+        <b>gap: 10px;</b> /* Adiciona 10px de espaçamento entre os itens da grade */
+    <b>}</b>
       
-      .grid-item {
-          background-color: #ddd; /* Define a cor de fundo dos itens da grade como cinza */
-          padding: 20px; /* Adiciona 20px de espaçamento interno (padding) nos itens */
-          text-align: center; /* Centraliza o texto dentro dos itens da grade */
-      }
+    <b>.grid-item {</b>
+        <b>background-color: #ddd;</b> /* Define a cor de fundo dos itens da grade como cinza */
+        <b>padding: 20px;</b> /* Adiciona 20px de espaçamento interno (padding) nos itens */
+        <b>text-align: center;</b> /* Centraliza o texto dentro dos itens da grade */
+    <b>}</b>
       </code></pre>
       
           <h3>7. Media Queries (Responsividade)</h3>
           <p>Adaptação de layout para diferentes tamanhos de tela usando Media Queries:</p>
           <pre><code>/* Adaptação de layout para telas menores */
-      @media (max-width: 768px) {
-          .container {
-              flex-direction: column; /* Organiza os itens em coluna (verticalmente) em telas menores */
-          }
+        <b>@media (max-width: 768px) {</b>
+            <b>.container {</b>
+            <b>flex-direction: column;</b> /* Organiza os itens em coluna (verticalmente) em telas menores */
+         <b>}</b>
       
-          .grid-container {
-              grid-template-columns: 1fr; /* Define uma única coluna em vez de três em telas menores */
-          }
-      }
+            <b>.grid-container {</b>
+            <b>grid-template-columns: 1fr;</b> /* Define uma única coluna em vez de três em telas menores */
+         <b>}</b>
+    <b>}</b>
       </code></pre>      
         </div>
-    </div>
 
+        <div class="image-container">
+            <img src="images/cachoeira.jpg" alt="Exemplo de Imagem" class="styled-image">
+        </div>
+    
+        <!-- Explicação do que foi feito -->
+<p>
+    No exemplo acima, usamos a tag <code>&lt;img&gt;</code> para exibir uma imagem e a envolvemos dentro de um contêiner chamado <code>.image-container</code>. O CSS foi utilizado para estilizar a imagem, aplicando arredondamento nos cantos e um efeito de zoom ao passar o mouse.
+</p>
+
+<!-- Código HTML e CSS usados -->
+<button class="toggle-btn" onclick="toggleVisibility('image-examples')">Ver códigos da imagem</button>
+<div id="image-examples" class="toggle-content">
+<p><strong>HTML:</strong></p>
+<pre><code><b>&lt;div class="image-container"&gt;
+    &lt;img src="images/cachoeira.jpg" alt="Imagem de Cachoeira" class="styled-image"&gt;
+&lt;/div&gt;</b>
+</code></pre>
+
+<p><strong>CSS:</strong></p>
+<pre><code><b>.image-container {</b>
+    <b>display: block;</b> /* Faz com que o container se comporte como um bloco, ocupando a<br>    largura disponível */
+    <b>width: 50%;</b> /* Define a largura do container como 50% da largura do elemento pai */
+    <b>padding: 20px;</b> /* Adiciona 20px de espaço interno ao redor do conteúdo do container */
+    <b>background-color: white;</b> /* Define a cor de fundo do container como branca */
+    <b>border-radius: 10px;</b> /* Adiciona bordas arredondadas com um raio de 10px */
+    <b>box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.5);</b> /* Adiciona uma sombra ao redor do container,<br>    com deslocamento de 1px horizontal, 4px vertical e um desfoque de 15px */
+    <b>margin: 20px auto;</b> /* Adiciona uma margem de 20px na parte superior e inferior e centraliza?<br>    o container horizontalmente */
+<b>}</b>
+
+<b>.styled-image {</b>
+    <b>width: 100%;</b> /* A imagem ocupa 100% da largura do container */
+    <b>max-width: 400px;</b> /* Define o tamanho máximo da imagem */
+    <b>border-radius: 15px;</b> /* Arredonda os cantos da imagem */
+    <b>transition: transform 0.3s ease;</b> /* Adiciona uma transição suave */
+<b>}</b>
+
+<b>.styled-image:hover {</b>
+    <b>transform: scale(1.05);</b> /* Aumenta a imagem levemente ao passar o mouse */
+<b>}</b>
+</code></pre>  
+    </div>
+    <div class="about">
+        <h1 id="about">Sobre o Projeto</h1>
+        <p>
+            O Blog HTML & CSS é um projeto desenvolvido para compartilhar conhecimentos e recursos sobre HTML e CSS, duas das principais tecnologias para desenvolvimento web. O blog visa fornecer informações detalhadas, tutoriais práticos e exemplos úteis para desenvolvedores web de todos os níveis.
+        </p>
+        <p>
+            O blog é destinado a desenvolvedores web iniciantes e intermediários que desejam melhorar suas habilidades em HTML e CSS, bem como a qualquer pessoa interessada em aprender sobre desenvolvimento front-end.
+        </p>
+        <p>
+            Nosso objetivo com o Blog HTML & CSS é capacitar desenvolvedores de todos os níveis com conhecimentos práticos e atualizados, oferecendo tutoriais claros, exemplos inspiradores e dicas valiosas para dominar as técnicas de desenvolvimento web.
+        </p>
+        <div class="team" >
+            <h1 class="title-team" id="team">Nossa equipe</h1>
+            <p>
+                O Blog HTML & CSS é um projeto desenvolvido por uma equipe de cinco alunos da UniFatecie, do curso de Engenharia de Software. Nosso objetivo é compartilhar conhecimentos e recursos sobre HTML e CSS, duas das principais tecnologias para desenvolvimento web.
+            </p>
+            <p>
+                A equipe é composta por:
+                <ul>
+                    <li>Vinícius Lucas Faria</li>
+                    <li>Adrian Souza Santos</li>
+                    <li>Mateus Lourenço</li>
+                    <li>João Vitor Fernandes Adeodato da Silva</li>
+                    <li>Kauã Gabriel Lima de Melo</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <a href="https://unifatecie.edu.br/" target="_blank">
+        <img src="images/logo.png" alt="Logo da UniFatecie" class="unifatecie-logo"/>
+    </a>
+</div>
     <footer>
         <p>&copy; 2024 Blog HTML & CSS - Unifatecie. Todos os direitos reservados.</p>
     </footer>
-
+    
     <script src="main.js"></script>
 </body>
 </html>
