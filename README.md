@@ -1,6 +1,6 @@
 # Blog de HTML e CSS
 
-Este é um blog criado como um trabalho para a faculdade, desenvolvido pelo grupo de alunos da UniFatecie, materia de Programação Web. O blog tem como objetivo fornecer informações e tutoriais sobre algumas das tags mais usadas em HTML e CSS, ajudando os leitores a entender como utilizá-las de forma eficaz em seus próprios projetos.
+Este é um blog criado como um trabalho para a faculdade. O blog tem como objetivo fornecer informações e tutoriais sobre algumas das tags mais usadas em HTML e CSS, ajudando os leitores a entender como utilizá-las de forma eficaz em seus próprios projetos.
 
 ## Descrição do Projeto
 
