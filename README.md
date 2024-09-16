@@ -30,4 +30,4 @@ O blog contém tutoriais e exemplos práticos de várias tags e propriedades de 
 1. **Clone o repositório**:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/ViniLF/HTML-CSS-Blog.git
